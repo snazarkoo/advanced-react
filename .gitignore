@@ -1,5 +1,6 @@
 node_modules/
 public/vendor.js
+public/bundle.js
 public/app.js
 coverage/
 build/
