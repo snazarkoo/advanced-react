@@ -6,7 +6,7 @@
   "author": "snazarkoo",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node lib/server.js --watch lib/server.js",
+    "dev": "nodemon --exec babel-node lib/server.js --ignore node_modules/",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -20,7 +20,9 @@
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "eslint": "^4.12.1",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
