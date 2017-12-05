@@ -1,12 +1,12 @@
 {
   "name": "advanced-react",
   "version": "1.0.0",
-  "main": "lib.server.js",
+  "main": "lib/server.js",
   "repository": "snazarkoo/advanced-react",
   "author": "snazarkoo",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec babel-node lib/server.js --ignore node_modules/",
+    "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js --ignore node_modules/",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
@@ -25,6 +25,7 @@
     "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-polyfill": "^6.26.0",
@@ -34,6 +35,7 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "nodemon": "^1.12.1",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.9.1"
