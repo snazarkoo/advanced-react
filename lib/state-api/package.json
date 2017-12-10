@@ -2,5 +2,5 @@
   "name": "state-api",
   "version": "1.0.0",
   "description": "State API",
-  "main": "lib/index.js"
+  "main": "./lib/index.js"
 }
